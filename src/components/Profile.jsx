@@ -12,7 +12,7 @@ function Profile({ currentPeriod, updatePeriod }) {
   return (
     <div className="profile">
       <div className="profile-details-section">
-        <img className="profile-img" src="/images/image-jeremy.png" />
+        <img className="profile-img" src="images/image-jeremy.png" />
         <div className="profile-details-wrapper">
           <p className="profile-text">Report for</p>
           <h1 className="profile-name">Jeremy Robson</h1>

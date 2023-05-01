@@ -4,7 +4,7 @@ import Time from "./Time";
 
 function Category({ title, currentPeriod, timeframes }) {
   const iconName = title.toLowerCase().replace(/ /g, "-");
-  const imgSrc = `/images/icon-${iconName}.svg`;
+  const imgSrc = `images/icon-${iconName}.svg`;
 
   const { daily, weekly, monthly } = timeframes;
 
@@ -17,7 +17,7 @@ function Category({ title, currentPeriod, timeframes }) {
       <div className="category-content">
         <div className="category-description">
           <h2 className="category-title">{title}</h2>
-          <img className="ellipsis-icon" src="/images/icon-ellipsis.svg" />
+          <img className="ellipsis-icon" src="images/icon-ellipsis.svg" />
         </div>
         <div className="time-section">
           {currentPeriod === "daily" && (
