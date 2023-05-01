@@ -1,0 +1,328 @@
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Rubik", sans-serif;
+  padding: 1.25rem;
+  overflow: scroll;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  width: 100%;
+}
+
+.profile {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.85rem;
+  overflow: hidden;
+}
+
+.profile-details-section {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 0.85rem;
+  display: flex;
+  align-items: center;
+  padding: 1.9rem 1.75rem;
+}
+
+.profile-img {
+  border: solid 0.15rem hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin: 0 1.15rem 0 0;
+  max-width: 4.15rem;
+}
+
+.profile-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-text {
+  color: hsl(236, 100%, 87%);
+  font-size: 0.85rem;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.profile-period-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.32rem 1.75rem;
+}
+
+.period-btn {
+  background-color: transparent;
+  border: none;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+
+input:checked + .period-btn {
+  color: #fff;
+}
+
+#daily-btn,
+#weekly-btn,
+#monthly-btn {
+  display: none;
+}
+
+.period-btn:hover,
+.selected-period-btn {
+  color: #fff;
+}
+
+.category {
+  border-radius: 0.85rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-hue {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.category-icon-container {
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  max-height: 2.25rem;
+  padding: 0 1.15rem;
+}
+
+.work-icon {
+  position: relative;
+  bottom: 0.6rem;
+  min-height: 4.6875rem;
+}
+
+.play-icon {
+  position: relative;
+  bottom: 0.4rem;
+  min-height: 4.6875rem;
+}
+
+.study-icon {
+  position: relative;
+  bottom: 0.35rem;
+  min-height: 4.6rem;
+}
+
+.exercise-icon {
+  position: relative;
+  bottom: 0.05rem;
+  min-height: 3.25rem;
+}
+
+.social-icon {
+  position: relative;
+  bottom: 0.89rem;
+  min-height: 5.9375rem;
+}
+
+.self-care-icon {
+  position: relative;
+  bottom: 0.5rem;
+  min-height: 3.6rem;
+}
+
+.category-content {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  padding: 1.62rem 1.75rem;
+}
+
+.category-content:hover {
+  background-size: cover;
+  box-shadow: inset 0 0 0 100rem hsla(235, 45%, 61%, 0.25);
+}
+
+.category-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ellipsis-icon {
+  cursor: pointer;
+  max-height: 0.25rem;
+}
+
+.ellipsis-icon:hover {
+  filter: brightness(500%);
+}
+
+.time-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0 0;
+}
+
+.time {
+  font-size: 1.55rem;
+  font-weight: 300;
+}
+
+.last-week-time {
+  color: hsl(236, 100%, 87%);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+@media (min-width: 56rem) {
+  body {
+    padding: 0 1.5rem;
+  }
+
+  #root {
+    height: 100vh;
+  }
+
+  .container {
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    max-width: 65.5rem;
+  }
+
+  .profile {
+    grid-row: span 2;
+  }
+
+  .profile-details-section {
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem 1.92rem;
+  }
+
+  .profile-img {
+    border: solid 0.2rem hsl(0, 0%, 100%);
+    margin: 0;
+    max-width: 4.75rem;
+  }
+
+  .profile-details-wrapper {
+    padding: 2rem 0 2.75rem;
+  }
+
+  .profile-text {
+    font-size: 0.9rem;
+  }
+
+  .profile-name {
+    font-size: 2.25rem;
+  }
+
+  .profile-period-btn-section {
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1.5rem 1.92rem 1.75rem;
+  }
+
+  .period-btn {
+    font-size: 1.1rem;
+    padding: 0.45rem 0;
+  }
+
+  .first-period-btn {
+    padding: 0 0 0.45rem;
+  }
+
+  .last-period-btn {
+    padding: 0.45rem 0 0;
+  }
+
+  .category-icon-container {
+    max-height: 2.75rem;
+    padding: 0 1rem;
+  }
+
+  .study-icon {
+    min-height: 4.8125rem;
+  }
+
+  .social-icon {
+    bottom: 0.9rem;
+  }
+
+  .self-care-icon {
+    bottom: 0.65rem;
+    min-height: 3.875rem;
+  }
+
+  .category-content {
+    padding: 1.5rem 1.75rem;
+  }
+
+  .category-title {
+    font-size: 1.05rem;
+  }
+
+  .time-section {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 1.25rem 0 0;
+  }
+
+  .time {
+    font-size: 3.25rem;
+  }
+
+  .last-week-time {
+    font-size: 0.87rem;
+    padding: 0.3283rem;
+  }
+}
