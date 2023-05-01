@@ -12,12 +12,16 @@ function Category({ title, currentPeriod, timeframes }) {
     <div className="category">
       <div className={`category-hue ${iconName}`}></div>
       <div className="category-icon-container">
-        <img className={`${iconName}-icon`} src={imgSrc} />
+        <img className={`${iconName}-icon`} src={imgSrc} alt="" />
       </div>
       <div className="category-content">
         <div className="category-description">
           <h2 className="category-title">{title}</h2>
-          <img className="ellipsis-icon" src="images/icon-ellipsis.svg" />
+          <img
+            className="ellipsis-icon"
+            src="images/icon-ellipsis.svg"
+            alt=""
+          />
         </div>
         <div className="time-section">
           {currentPeriod === "daily" && (
