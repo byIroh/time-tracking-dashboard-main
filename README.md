@@ -4,7 +4,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/time-tracking-dashboard-main-mobile-first-react-js-_8-DJYr4iP)
 - Live Site URL: [GitHub Pages](https://byiroh.github.io/time-tracking-dashboard-main/)
 
 ## Table of contents
